@@ -67,7 +67,7 @@ LCD RW and VSS to GND, VDD to 5 V, V0 to a potentiometer wiper for contrast, A t
 morse-communicator/
 ├── platformio.ini       # Build config: board, framework, upload settings
 ├── src/
-│   └── main_V1.c         # Firmware — no Arduino library calls
+│   └── main.c         # Firmware — no Arduino library calls
 ├── docs/
 │   └── circuit-diagram.png
 └── README.md
