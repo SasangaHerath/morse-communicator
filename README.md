@@ -84,14 +84,14 @@ pio device monitor -b 9600  # open the serial terminal
 
 PlatformIO handles the toolchain and `F_CPU`/baud setup automatically via `platformio.ini`.
 
-**Tinkercad Circuits** — Paste the contents of `src/main_V1.c` into the code editor in Text
+**Tinkercad Circuits** — Paste the contents of `src/main.c` into the code editor in Text
 mode. The file exposes `setup()` and `loop()` for compatibility, but calls no Arduino
 library functions.
 
 **Bare avr-gcc, without PlatformIO:**
 
 ```bash
-avr-gcc -mmcu=atmega328p -DF_CPU=16000000UL -Os -o main.elf src/main_V1.c
+avr-gcc -mmcu=atmega328p -DF_CPU=16000000UL -Os -o main.elf src/main.c
 avr-objcopy -O ihex -R .eeprom main.elf main.hex
 avrdude -c arduino -p m328p -P /dev/ttyUSB0 -b 115200 -U flash:w:main.hex
 ```
