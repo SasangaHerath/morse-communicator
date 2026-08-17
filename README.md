@@ -5,7 +5,6 @@ A two-way Morse code terminal for the ATmega328P (Arduino Uno), written in pure 
 timer interrupts.
 
 > CO321 Embedded Systems Project (2026)
-> Department of Computer Engineering, University of Peradeniya
 
 Repo: [github.com/SasangaHerath/morse-communicator](https://github.com/SasangaHerath/morse-communicator)
 
